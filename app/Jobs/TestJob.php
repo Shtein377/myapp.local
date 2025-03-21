@@ -20,7 +20,7 @@ class TestJob implements ShouldQueue
 
    
     public function handle(): void
-    {
+    {  info();
         sleep(1);
     }
 }
