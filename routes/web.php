@@ -16,7 +16,15 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::view('/', 'layouts.app');
+// Route::view('/', 'layouts.app');
 
-Route::view('/home','home.index');
+// Route::redirect('/', 'home.index');
 
+
+// Route::get('home', function () {
+//     return view('home.index'); // Рендерим шаблон home/index.blade.php
+// })->name('home');
+
+Route::view('/home','home.index')->name('home');
+
+// Route::view('/', 'layouts.app');

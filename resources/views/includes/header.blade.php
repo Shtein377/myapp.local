@@ -1,5 +1,20 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+<div class="search-bar  py-2">
+    <div class="container-fluid d-flex justify-content-end">
+        <form class="d-flex me-lg-5" role="search" style="max-width: 400px;">
+            <input class="form-control custom_form  me-2" type="search" placeholder="Поиск" aria-label="Search"/>
+            <button class="btn search_button" type="submit">{{__('Поиск')}}</button>
+        </form>
+    </div>
+</div>
+
+
+
+<nav class="navbar navbar-expand-lg shadow-sm">
+
+    
     <div class="container">
+
+
         <!-- Логотип -->
         <a class="navbar-brand" href="#">
             {{config('app.name')}}
@@ -86,14 +101,15 @@
             </ul>
             
             <!-- Кнопки входа и регистрации -->
-            <div class="auth-buttons d-flex">
-                <a href="#" class="btn btn-login">
+            <div class="auth-buttons d-flex ms-3">
+                <a href="#" class="btn btn-login btn-sm">
                     <i class="fas fa-sign-in-alt me-1"></i> Вход
                 </a>
-                <a href="#" class="btn btn-register">
+                <a href="#" class="btn btn-register btn-sm ms-2">
                     <i class="fas fa-user-plus me-1"></i> Регистрация
                 </a>
             </div>
         </div>
     </div>
 </nav>
+
